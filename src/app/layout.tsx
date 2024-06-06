@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
-import Constelacao from "./components/Constelacao";
+import NightSky from "./components/NightSky";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <div>
+          <NightSky />
           <span className='shooting-star' />
           <span className='shooting-star' />
           <span className='shooting-star' />
@@ -31,7 +32,6 @@ export default function RootLayout({
           <span className='shooting-star' />
           <span className='shooting-star' />
         </div>
-        <Constelacao />
         <Header />
         {children}
       </body>
