@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Music from "./Music";
 
 export default function Header() {
   return (
@@ -9,6 +10,7 @@ export default function Header() {
         <Link href='/gallery'>갤러리</Link>
         <Link href='/message'>메시지</Link>
       </nav>
+      <Music />
     </header>
   );
 }

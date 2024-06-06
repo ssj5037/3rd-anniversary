@@ -8,6 +8,7 @@ body {
   overflow: hidden;
 }
 
+/* shooting star css */
 .shooting-star {
   position: absolute;
   top: 50%;
@@ -125,4 +126,31 @@ body {
   left: initial;
   animation-delay: 2s;
   animation-duration: 3s;
+}
+
+/* react-h5-audio-player css */
+.rhap_container * {
+  color: #fff;
+}
+.rhap_container {
+  background: transparent;
+  box-shadow: none;
+}
+.rhap_main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.rhap_additional-controls {
+  display: none;
+}
+.rhap_volume-controls {
+  display: none;
+  /* justify-content: flex-start; */
+}
+.rhap_stacked .rhap_controls-section {
+  margin-top: 0;
+  display: block;
+  flex: 0;
 }
