@@ -135,6 +135,10 @@ body {
 .rhap_container {
   background: transparent;
   box-shadow: none;
+  width: 40px;
+}
+.rhap_progress-section {
+  display: none;
 }
 .rhap_main {
   display: flex;

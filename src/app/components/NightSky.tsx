@@ -86,5 +86,5 @@ export default function NightSky() {
     render();
   }, []);
 
-  return <canvas className='absolute -z-10' ref={nightSky} />;
+  return <canvas ref={nightSky} />;
 }

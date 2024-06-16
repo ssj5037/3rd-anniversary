@@ -5,7 +5,7 @@ import "react-h5-audio-player/lib/styles.css";
 
 export default function Music() {
   return (
-    <div className='flex gap-2 my-2 mx-5 w-96'>
+    <div className='flex gap-2 my-2 mx-5'>
       <AudioPlayer
         autoPlay
         loop
