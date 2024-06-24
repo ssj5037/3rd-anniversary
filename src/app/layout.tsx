@@ -17,23 +17,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className={`${inter.className} relative`}>
-        <div className='fixed -z-10'>
+    <html lang="en">
+      <body className={`${inter.className} h-dvh flex flex-col relative`}>
+        <div className="fixed -z-10">
           <NightSky />
-          <span className='shooting-star' />
-          <span className='shooting-star' />
-          <span className='shooting-star' />
-          <span className='shooting-star' />
-          <span className='shooting-star' />
-          <span className='shooting-star' />
-          <span className='shooting-star' />
-          <span className='shooting-star' />
-          <span className='shooting-star' />
-          <span className='shooting-star' />
+          <span className="shooting-star" />
+          <span className="shooting-star" />
+          <span className="shooting-star" />
+          <span className="shooting-star" />
+          <span className="shooting-star" />
+          <span className="shooting-star" />
+          <span className="shooting-star" />
+          <span className="shooting-star" />
+          <span className="shooting-star" />
+          <span className="shooting-star" />
         </div>
         <Header />
-        <main className='px-16'>{children}</main>
+        <main className="grow px-16">{children}</main>
       </body>
     </html>
   );
