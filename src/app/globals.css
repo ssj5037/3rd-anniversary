@@ -8,6 +8,12 @@ body {
   overflow: hidden;
 }
 
+.message_shadow {
+  box-shadow: 0px 0px 28px 10px rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 0px 28px 10px rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: 0px 0px 28px 10px rgba(255, 255, 255, 0.4);
+}
+
 /* shooting star css */
 .shooting-star {
   position: absolute;
