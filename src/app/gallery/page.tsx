@@ -4,68 +4,81 @@ import { useState } from "react";
 import "./galleryStyle.css";
 import gallerySample from "../../../public/img/gallerySample.jpg";
 import Image from "next/image";
+import { RiHeart3Fill } from "react-icons/ri";
+import { HiOutlineChatBubbleOvalLeftEllipsis } from "react-icons/hi2";
+import { PiBookmarkSimple, PiPaperPlaneTilt } from "react-icons/pi";
 
 export default function GalleryPage() {
   const [imgList, setImgList] = useState([
     {
       src: gallerySample,
       date: "2023-01-01",
+      content: "내용입니다.",
       isChecked: true,
-      idx: 3,
-    },
-    {
-      src: gallerySample,
-      date: "2023-01-01",
-      isChecked: false,
       idx: 4,
     },
     {
       src: gallerySample,
       date: "2023-01-01",
+      content: "내용입니다.",
       isChecked: false,
       idx: 5,
     },
     {
       src: gallerySample,
       date: "2023-01-01",
+      content: "내용입니다.",
+      isChecked: false,
+      idx: 6,
+    },
+    {
+      src: gallerySample,
+      date: "2023-01-01",
+      content: "내용입니다.",
+      isChecked: false,
+      idx: 7,
+    },
+    {
+      src: gallerySample,
+      date: "2023-01-01",
+      content: "내용입니다.",
       isChecked: false,
       idx: 0,
     },
     {
       src: gallerySample,
       date: "2023-01-01",
+      content: "내용입니다.",
       isChecked: false,
       idx: 0,
     },
     {
       src: gallerySample,
       date: "2023-01-01",
+      content: "내용입니다.",
       isChecked: false,
       idx: 0,
     },
     {
       src: gallerySample,
       date: "2023-01-01",
-      isChecked: false,
-      idx: 0,
-    },
-    {
-      src: gallerySample,
-      date: "2023-01-01",
-      isChecked: false,
-      idx: 0,
-    },
-    {
-      src: gallerySample,
-      date: "2023-01-01",
+      content: "내용입니다.",
       isChecked: false,
       idx: 1,
     },
     {
       src: gallerySample,
       date: "2023-01-01",
+      content: "내용입니다.",
       isChecked: false,
       idx: 2,
+    },
+    {
+      src: gallerySample,
+      date: "2023-01-01",
+      content: "내용입니다.",
+      isChecked: false,
+      idx: 3,
     },
   ]);
 
@@ -123,16 +136,16 @@ export default function GalleryPage() {
     });
   };
   return (
-    <div className='body'>
-      <div className='container'>
-        <div className='cards'>
+    <div className="body">
+      <div className="container">
+        <div className="cards">
           {imgList.map((item, index) => {
             return (
               <div key={index}>
                 <input
-                  className='card-radio'
-                  type='radio'
-                  name='slider'
+                  className="card-radio"
+                  type="radio"
+                  name="slider"
                   id={`item-${index + 1}`}
                   defaultChecked={item.isChecked}
                   onClick={(e) => handleClick(e, index)}
@@ -145,9 +158,21 @@ export default function GalleryPage() {
                   id={`image-${index + 1}`}
                 >
                   <Image src={item.src} alt={`image-${index + 1}`} />
-                  <p className='bg-white text-black p-4'>
-                    {index} - {item.isChecked} - {item.idx} - {item.date}
-                  </p>
+                  <div className="bg-white p-2">
+                    <div className="h-6 flex justify-between">
+                      <div className="flex gap-1">
+                        <RiHeart3Fill color="red" size={32} />
+                        <HiOutlineChatBubbleOvalLeftEllipsis
+                          color="black"
+                          size={32}
+                        />
+                        <PiPaperPlaneTilt color="black" size={32} />
+                      </div>
+                      <PiBookmarkSimple color="black" size={32} />
+                    </div>
+                    <p className="text-xl">{item.date}</p>
+                    <p className="">{item.content}</p>
+                  </div>
                 </label>
               </div>
             );
