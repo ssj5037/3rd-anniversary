@@ -13,6 +13,9 @@ const pretendard = localFont({
 export const metadata: Metadata = {
   title: "return together;",
   description: "수진&징관 3주년 기념 사이트",
+  icons: {
+    icon: "/logo192.png",
+  },
 };
 
 export default function RootLayout({
