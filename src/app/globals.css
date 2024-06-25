@@ -14,6 +14,17 @@ body {
   -moz-box-shadow: 0px 0px 28px 10px rgba(255, 255, 255, 0.4);
 }
 
+.message_container::-webkit-scrollbar {
+  width: 5px;
+}
+.message_container::-webkit-scrollbar-thumb {
+  background-color: #2f3542;
+  border-radius: 10px;
+}
+.message_container::-webkit-scrollbar-track {
+  background-color: none;
+}
+
 /* shooting star css */
 .shooting-star {
   position: absolute;
