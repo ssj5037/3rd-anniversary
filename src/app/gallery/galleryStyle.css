@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 10px;
   transition: background 0.4s ease-in-out;
 }
 
@@ -29,13 +28,13 @@
   cursor: pointer;
   border-radius: 20px;
   overflow: hidden;
-  padding-bottom: 56px;
+  padding-bottom: 140px;
 }
 
 .container {
   width: 100%;
-  max-width: 1000px;
-  max-height: 800px;
+  max-width: 800px;
+  max-height: 1000px;
   height: 100%;
   transform-style: preserve-3d;
   display: flex;
@@ -61,42 +60,55 @@ img {
   opacity: 0;
   z-index: -10;
 }
-
 .cards .idx-2 {
+  transform: translatex(-100%) scale(0.5);
+  opacity: 0;
+  z-index: -10;
+}
+
+.cards .idx-3 {
   transform: translatex(-85%) scale(0.7);
   opacity: 0.2;
   z-index: 0;
 }
 
-.cards .idx-3 {
+.cards .idx-4 {
   transform: translatex(-50%) scale(0.8);
   opacity: 0.4;
   z-index: 1;
 }
 
-.cards .idx-4 {
+.cards .idx-5 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 2;
 
+  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.4);
   img {
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
   }
 }
 
-.cards .idx-5 {
+.cards .idx-6 {
   transform: translatex(50%) scale(0.8);
   opacity: 0.4;
   z-index: 1;
 }
 
-.cards .idx-6 {
+.cards .idx-7 {
   transform: translatex(85%) scale(0.7);
   opacity: 0.2;
   z-index: 0;
 }
 
-.cards .idx-7 {
+.cards .idx-8 {
+  transform: translatex(100%) scale(0.5);
+  opacity: 0;
+  z-index: -10;
+}
+.cards .idx-9 {
   transform: translatex(100%) scale(0.5);
   opacity: 0;
   z-index: -10;

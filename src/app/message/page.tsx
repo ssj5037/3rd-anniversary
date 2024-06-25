@@ -5,7 +5,7 @@ import ssjImage from "../../../public/img/ssj.png";
 export default function messagePage() {
   return (
     <div className='flex justify-center'>
-      <div className='bg-violet-100 message_shadow w-[800px] rounded-lg h-[84dvh] relative'>
+      <div className='bg-gray-300 message_shadow w-[800px] rounded-lg h-[84dvh] relative'>
         <div className='p-20 text-black text-xl h-full flex flex-col justify-between'>
           <p>
             안녕, 우리가 함께한지 벌써 3년이 지났네.
